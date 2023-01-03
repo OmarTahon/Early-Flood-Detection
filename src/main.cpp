@@ -161,7 +161,7 @@ void setup() {
 
     // set sleep sec to use WET_SLEEP_SEC, which is shorter because
     // touch sensor is disabled to avoid constant wakeups when wet.
-    sleep_sec = WET_SLEEP_SEC;
+    // sleep_sec = WET_SLEEP_SEC;
 //   }
 //   setup_sleep(sleep_sec);
 
@@ -172,8 +172,8 @@ void setup() {
     // prevMillisMQTT = millisOffset;
     connectWiFi();
     updateWiFiSignalStrength();
-    // mqttConnect();
-    // sendUpdateToMQTT();
+    mqttConnect();
+    sendUpdateToMQTT();
   // }
 
   // When dry, setup interrupt on Touch Pad 3 (GPIO15)
@@ -189,21 +189,21 @@ void setup() {
   //   ESP.restart();
   // }
 
-  // Check OTA update on first boot
-//   if (bootCount == 1) {
-//     connectWiFi();  // Need to make sure WiFi connected since it's conditional above
-//     setupOTA();
-//     delay(2000);
-//     // takes a few attempts.  worked on count=11 (2s each)
-//     unsigned short maxRetry = 20;
-//     unsigned short countRetry = 0;
-//     while(countRetry <= maxRetry) {
-//         Serial.println("[OTA] count: " + String(countRetry));
-//         countRetry++;
-//         ArduinoOTA.handle();
-//         delay(2000);
-//     }
-//   }
+  Check OTA update on first boot
+  if (bootCount == 1) {
+    connectWiFi();  // Need to make sure WiFi connected since it's conditional above
+    setupOTA();
+    delay(2000);
+    // takes a few attempts.  worked on count=11 (2s each)
+    unsigned short maxRetry = 20;
+    unsigned short countRetry = 0;
+    while(countRetry <= maxRetry) {
+        Serial.println("[OTA] count: " + String(countRetry));
+        countRetry++;
+        ArduinoOTA.handle();
+        delay(2000);
+    }
+  }
 
 //   deep_sleep(sleep_sec);
 }
