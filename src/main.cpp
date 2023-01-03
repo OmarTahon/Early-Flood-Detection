@@ -85,11 +85,11 @@
 
 #include "../config/config.h"
 #include "Device Drivers/wifi-connection.h"
-// #include "functions/ota.h"
-// #include "functions/deep-sleep.h"
-// #include "functions/mqtt.h"
-// #include "functions/leak-detect.h"
-// #include "functions/attention.h"
+#include "Device Drivers/ota.h"
+#include "Device Drivers/deep-sleep.h"
+#include "Device Drivers/mqtt.h"
+#include "Device Drivers/leak-detect.h"
+#include "Device Drivers/attention.h"
 
 #ifdef __arm__
 // should use uinstd.h to define sbrk but Due causes a conflict
