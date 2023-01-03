@@ -2,8 +2,16 @@
 #define DEEP_SLEEP_FUNCTIONS
 
 #include <Arduino.h>
-
+#include <Arduino_FreeRTOS.h>
 #include "../config/config.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <sys/time.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "esp_sleep.h"
 
 #define uS_TO_S_FACTOR 1000000  /* Conversion factor for micro seconds to seconds */
 
