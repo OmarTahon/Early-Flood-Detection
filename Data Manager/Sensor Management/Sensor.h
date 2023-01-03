@@ -1,3 +1,3 @@
 void configureControllerPins(){}
 float checkWaterLevel(){}
-bool alaramPotintialFloods(){}
+bool alaramPotintialFlood(){}
