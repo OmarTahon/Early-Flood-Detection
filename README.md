@@ -85,20 +85,14 @@ Duration
 Consumption (mAh)
 ```
 ```
-Deep-sleep 0.01 3587 7.744x10^- 10
+Deep-sleep = 0.01* 3587* 7.744x10^- 10
 ```
 ```
 Light-sleep - to
-main memory
-```
-```
-0.8 12 1.85x10^- 5
+main memory = 0.8 *12 *1.85x10^- 5
 ```
 ```
 Modem-sleep -
-transmission
-```
-```
-31 1 8.61x10^- 3
+transmission = 31* 1 *8.61x10^- 3
 ```
 
