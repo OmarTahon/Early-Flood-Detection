@@ -25,12 +25,15 @@ void setup() {
 void loop() {
   digitalWrite(POWER_PIN, HIGH);  // turn the sensor ON
   delay(10);                      // wait 10 milliseconds
+  Serial.print("here!");
   value = analogRead(SIGNAL_PIN); // read the analog value from sensor
   digitalWrite(POWER_PIN, LOW);   // turn the sensor OFF
-
+  Serial.println(value);
   level = map(value, SENSOR_MIN, SENSOR_MAX, 0, 4); // 4 levels
+  Serial.print("hereeeee");
   Serial.print("Water level: ");
   Serial.println(level);
+  
 
   delay(1000);
 }
