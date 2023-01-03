@@ -11,8 +11,8 @@
 #define WET_SLEEP_SEC 30
 
 // WiFi
-#define WIFI_NETWORK "E-JUST"
-#define WIFI_PASSWORD "Ejust@Staff2022"
+#define WIFI_NETWORK "Ya3m"
+#define WIFI_PASSWORD "browhat1"
 #define WIFI_TIMEOUT 20000 // 20 seconds
 #define WIFI_RECOVER_TIME_MS 1000 // (1-20 seconds)
 
