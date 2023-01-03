@@ -10,6 +10,7 @@
             "includePath": [
                 "e:/College/Year 4/ADVANCED EMBEDDED/PROJECT/advanced-embedded-systems/include",
                 "e:/College/Year 4/ADVANCED EMBEDDED/PROJECT/advanced-embedded-systems/src",
+                "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                 "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                 "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
                 "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos",
@@ -226,7 +227,6 @@
                 "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/libraries/USB/src",
                 "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/libraries/Update/src",
                 "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src",
-                "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                 "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                 "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
                 "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
@@ -237,6 +237,7 @@
                 "path": [
                     "e:/College/Year 4/ADVANCED EMBEDDED/PROJECT/advanced-embedded-systems/include",
                     "e:/College/Year 4/ADVANCED EMBEDDED/PROJECT/advanced-embedded-systems/src",
+                    "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                     "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                     "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
                     "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos",
@@ -453,7 +454,6 @@
                     "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/libraries/USB/src",
                     "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/libraries/Update/src",
                     "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src",
-                    "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                     "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                     "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
                     "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
