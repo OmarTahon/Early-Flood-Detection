@@ -189,7 +189,7 @@ void setup() {
   //   ESP.restart();
   // }
 
-  Check OTA update on first boot
+//  Check OTA update on first boot
   if (bootCount == 1) {
     connectWiFi();  // Need to make sure WiFi connected since it's conditional above
     setupOTA();

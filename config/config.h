@@ -17,7 +17,7 @@
 #define WIFI_RECOVER_TIME_MS 1000 // (1-20 seconds)
 
 // MQTT
-#define MQTT_HOST IPAddress(X, X, X, X)
+#define MQTT_HOST IPAddress(RX, RX, RX, RX)
 #define MQTT_PORT 1883
 #define MQTT_USER "user"
 #define MQTT_PASSWORD "password"
