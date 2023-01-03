@@ -8,8 +8,8 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "e:/College/Year 4/ADVANCED EMBEDDED/PROJECT/advanced-embedded-systems/include",
-                "e:/College/Year 4/ADVANCED EMBEDDED/PROJECT/advanced-embedded-systems/src",
+                "e:/College/Year 4/ADVANCED EMBEDDED/PROJECT/advanced-embedded-systems/projectstartover/pleaseworkffs/include",
+                "e:/College/Year 4/ADVANCED EMBEDDED/PROJECT/advanced-embedded-systems/projectstartover/pleaseworkffs/src",
                 "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                 "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
                 "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos",
@@ -235,8 +235,8 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "e:/College/Year 4/ADVANCED EMBEDDED/PROJECT/advanced-embedded-systems/include",
-                    "e:/College/Year 4/ADVANCED EMBEDDED/PROJECT/advanced-embedded-systems/src",
+                    "e:/College/Year 4/ADVANCED EMBEDDED/PROJECT/advanced-embedded-systems/projectstartover/pleaseworkffs/include",
+                    "e:/College/Year 4/ADVANCED EMBEDDED/PROJECT/advanced-embedded-systems/projectstartover/pleaseworkffs/src",
                     "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                     "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
                     "C:/Users/89WM/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos",
