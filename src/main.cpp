@@ -6,8 +6,9 @@
  * For more detail (instruction and wiring diagram), visit https://esp32io.com/tutorials/esp32-water-sensor
  */
 #include <Arduino.h>
+#include <stdio.h>
 // #include <WiFi.h>
-
+ 
 #define POWER_PIN  17 // ESP32 pin GIOP17 connected to sensor's VCC pin
 #define SIGNAL_PIN 36 // ESP32 pin GIOP36 (ADC0) connected to sensor's signal pin
 #define SENSOR_MIN 0
@@ -17,23 +18,23 @@ int value = 0; // variable to store the sensor value
 int level = 0; // variable to store the water level
 
 void setup() {
-  Serial.begin(9600);
+  char temp[10];
+  Serial.begin(115200);
   pinMode(POWER_PIN, OUTPUT);   // configure D7 pin as an OUTPUT
   digitalWrite(POWER_PIN, LOW); // turn the sensor OFF
 }
 
+
+char temp[80];
+
 void loop() {
   digitalWrite(POWER_PIN, HIGH);  // turn the sensor ON
   delay(10);                      // wait 10 milliseconds
-  Serial.print("here!");
   value = analogRead(SIGNAL_PIN); // read the analog value from sensor
   digitalWrite(POWER_PIN, LOW);   // turn the sensor OFF
-  Serial.println(value);
   level = map(value, SENSOR_MIN, SENSOR_MAX, 0, 4); // 4 levels
-  Serial.print("hereeeee");
-  Serial.print("Water level: ");
-  Serial.println(level);
-  
+  sprintf(temp , "%d,%d \n" ,level, value);
+  Serial.print(temp);
 
   delay(1000);
 }
