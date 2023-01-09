@@ -51,6 +51,7 @@ void setup() {
 }
 
 void loop() {
+  long st = millis();
   // Read water level sensor and store value in a variable
   float waterLevel = readWaterLevelSensor();
 
@@ -59,6 +60,11 @@ void loop() {
 
   // Set alarm if water level exceeds a certain threshold
   setAlarm(waterLevel);
+
+  long tm = millis() - st;
+  Serial.println("time :");
+  Serial.println(tm);
+  Serial.println("ms");
 
   // Enter deep sleep mode for 15 minutes
   enterDeepSleep();
