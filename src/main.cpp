@@ -21,6 +21,7 @@ FirebaseConfig config;
 bool signupOK = false;
 void setup() {
   Serial.begin(115200);
+  long st2 = millis();
   connectToWiFi();
   // connectFirebase();
 
@@ -47,7 +48,11 @@ void setup() {
   Firebase.reconnectWiFi(true);
 
 //   Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
-  Firebase.reconnectWiFi(true);
+  //Firebase.reconnectWiFi(true);
+   long tm2 = millis() - st2;
+  Serial.println("time connect :");
+  Serial.println(tm2);
+  Serial.println("ms");
 }
 
 void loop() {
