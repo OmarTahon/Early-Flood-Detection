@@ -77,11 +77,11 @@ void loop() {
 
 void sendDataToFirebase(float waterLevel) {
      // Push data to Firebase
-      String path = "/sensorData";
+      // String path = "/sensorData";
 
     if (Firebase.ready() && signupOK){
     // Write an Int number on the database path test/int
-    if (Firebase.RTDB.push(&fbdo, path, waterLevel)){
+    if (Firebase.RTDB.push(&fbdo, "Sensor/reading", waterLevel)){
       Serial.println("PASSED");
       Serial.println("PATH: " );
       Serial.println(fbdo.dataPath());
@@ -100,11 +100,11 @@ void setAlarm(float waterLevel) {
 
 
     // Push data to Firebase
-    String alarmPath = "/alarm";
+    // String alarmPath = "/alarm";
     
     if (Firebase.ready() && signupOK){
     if (waterLevel > ALLARM_THRESHOLD){
-    if (Firebase.RTDB.setBool(&fbdo, alarmPath, true)){
+    if (Firebase.RTDB.setBool(&fbdo, "checkAlarm/alarm", true)){
       Serial.println("Alarm triggered");
       Serial.println("PASSED");
       Serial.println("PATH: " );
@@ -119,7 +119,7 @@ void setAlarm(float waterLevel) {
       Serial.println(fbdo.errorReason());
     }}
     else{
-    if (Firebase.RTDB.setBool(&fbdo, alarmPath, false)){
+    if (Firebase.RTDB.setBool(&fbdo,"checkAlarm/alarm", false)){
       Serial.println("PASSED");
       Serial.println("PATH: " );
       Serial.println(fbdo.dataPath());
