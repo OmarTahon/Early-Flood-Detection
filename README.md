@@ -71,7 +71,7 @@ Using a 2.3 v / 500 mAh battery, the duration is 2392 days, which is more than e
 |State| Power (mA) |Duration (sec)| Consumption (mAh)|
 | :---        |    :----:   |        :---: |---:              |
 | Deep-sleep      | $$0.01$$|$$3587$$   |$$7.744*10^{-10}$$ |
-|Light-sleep to main memory   | $$0.8     $$   |$$ 12   $$   | $$1.85*10^{-5}$$|
-|Modem-sleep-transmission   |$$ 31        $$|$$1$$      |$$8.61*10^{-3}$$ |
+|Light-sleep to main memory   | $$0.8     $$   | $12$      | $$1.85*10^{-5}$$|
+|Modem-sleep-transmission   |      $31 $   |     $$1$$      |$$8.61*10^{-3}$$ |
 
 
